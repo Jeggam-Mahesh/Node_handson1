@@ -1,0 +1,30 @@
+const data=[
+    {
+        "id":1,
+        "name":"mahesh",
+        "batch":"EA23",
+        "emailId":"mahesh@gmail.com"
+    },
+    {
+        "id":2,
+        "name":"Venkat",
+        "batch":"EA23",
+        "emailId":"venkat@gmail.com"
+    },{
+        "id":3,
+        "name":"umesh",
+        "batch":"EA23",
+        "emailId":"umesh@gmail.com"
+    },{
+        "id":4,
+        "name":"sandeep",
+        "batch":"EA23",
+        "emailId":"sandeep@gmail.com"
+    },{
+        "id":5,
+        "name":"Ajay",
+        "batch":"EA23",
+        "emailId":"ajay@gmail.com"
+    },
+]
+module.exports=data;
