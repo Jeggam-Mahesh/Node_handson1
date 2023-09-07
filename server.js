@@ -1,9 +1,8 @@
-const { write } = require('fs');
+// const { write } = require('fs');
 const http = require('http');
 const data = require('./jsondata')
 let port = 4000;
-const app = http.createServer((req, res) => {
-
+const app = http.createServer((req,res) => {
     res.write("<html>")
     res.write("<body>")
     if (req.url === '/') {
@@ -13,6 +12,7 @@ const app = http.createServer((req, res) => {
     }
     else if (req.url === '/About') {
         res.write("<h1> This is About Page</h1>")
+
     }
     else if (req.url === '/fetchJson') {
         const json_data = JSON.stringify(data)
@@ -26,10 +26,6 @@ const app = http.createServer((req, res) => {
     res.write("</html>")
     res.end()
 })
-
-
-
-
 app.listen(port, () => {
     console.log(`server is running on port no:${port} `)
 })
