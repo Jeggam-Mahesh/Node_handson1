@@ -4,8 +4,8 @@ const specific=(req,res,next)=>{
     next()
    }
     else{
-        res.send("specific middleware running");
-        console.log("specific middleware running");
+        res.send("authentication failed");
+        console.log("authentication failed");
     }
    
 }

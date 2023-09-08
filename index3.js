@@ -7,8 +7,9 @@ const app=express();
  
 app.use(cors());
 const app_middle=(req,res,next)=>{
-    res.send("APP level middleware running")
+    // res.send("APP level middleware running")
     console.log("APP level middleware running")
+    next()
 }
 app.use(app_middle) 
 app.get("/",home)
